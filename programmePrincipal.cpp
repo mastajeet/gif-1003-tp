@@ -24,7 +24,7 @@ int main()
 		for (int j = 0; j < MAX_VALEURS; ++j)
 		{
 			cin >> valeurSaisie;
-			tabValeurs[i, j] = valeurSaisie;
+			tabValeurs[i][j] = valeurSaisie;
 		}
 		cout << endl;
 	}

@@ -81,10 +81,10 @@ int occurencesPlusGrand(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes,
  */
 void afficherTableau(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes)
 {
-	for (int i = 0; i = p_nombreLignes; i++)
+	for (int i = 0; i < p_nombreLignes; i++)
 	{
 		cout << "Ligne " << i + 1 << " : ";
-		for (int j = 0; j == MAX_VALEURS; j++)
+		for (int j = 0; j < MAX_VALEURS; j++)
 		{
 			cout << "  " << p_tabDonnees[i][j];
 		}

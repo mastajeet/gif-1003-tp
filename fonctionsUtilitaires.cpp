@@ -39,9 +39,9 @@ void triBulle(int tabDonnee[MAX_VALEURS])
  * \param[in] tabDonnees[][MAX_VALEURS] un tableau d'entiers à trier
  * \param[in] p_nombre-de-Lignes le nombre vde lignes du tableau
  */
-void tri2d(int tabDonnees[][MAX_VALEURS], int p_nombre-de-Lignes)
+void tri2d(int tabDonnees[][MAX_VALEURS], int p_nombreLignes)
 {
-	for (int i = 0; i < p_nombre-de-Lignes; i++)
+	for (int i = 0; i < p_nombreLignes; i++)
 	{
 		triBulle(tabDonnees[i]);
 	}

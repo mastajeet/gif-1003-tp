@@ -5,7 +5,7 @@
  * \version 0.1
  * \date 2016-09-01
  */
-#include <istream>
+#include <iostream>
 #include "fonctionsUtilitaires.h"
 
 using namespace std;

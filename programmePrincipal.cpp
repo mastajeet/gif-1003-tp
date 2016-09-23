@@ -18,13 +18,13 @@ int main()
 
 	cout << "Saisissez des nombres séparés par des entrées " << endl;
 
-	int register;
+	int valeurSaisie;
 	for (int i = 0; i < MAX_CAS; ++i)
 	{
 		for (int j = 0; j < MAX_VALEURS; ++j)
 		{
-			cin >> register;
-			tabValeurs[i, j] = register;
+			cin >> valeurSaisie;
+			tabValeurs[i, j] = valeurSaisie;
 		}
 		cout << endl;
 	}

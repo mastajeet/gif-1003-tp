@@ -42,8 +42,8 @@ int main()
 
 	float taux;
 	int cardinalite = MAX_VALEURS * MAX_CAS;
-	taux = (occurencesPlusGrand(tabValeurs, MAX_CAS, seuil) / cardinalite)
-			* 100;
+	taux = (occurencesPlusGrand(tabValeurs, MAX_CAS, seuil)*100 / cardinalite);
+
 
 	cout << "il y a " << taux << " pourcent de nombres plus grands que "
 				<< seuil << " dans le tableau de valeurs" << endl;

@@ -55,7 +55,7 @@ void tri2d(int tabDonnees[][MAX_VALEURS], int p_nombreLignes)
  * \pre p_valeur existe dans le tableau
  * \return le nombre de nombres plus grand que la valeur passée en paramètre
  */
-int occurencesPlusGrand(int p_tabDonnees[MAX_VALEURS][], int p_nombreLignes,
+int occurencesPlusGrand(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes,
 		int p_valeur)
 {
 	float nombreOccurencesPlusGrand;

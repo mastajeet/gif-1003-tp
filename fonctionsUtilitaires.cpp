@@ -64,7 +64,7 @@ int occurencesPlusGrand(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes,
 		for (int i = 0; i < p_nombreLignes; ++i)
 		{
 			int j = 0;
-			while (p_tabDonnees[i][j] > p_valeur || j > MAX_VALEURS)
+			while (p_tabDonnees[i][j] > p_valeur && j < MAX_VALEURS)
 			{
 				nombreOccurencesPlusGrand++;
 				j++;

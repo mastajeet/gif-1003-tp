@@ -10,9 +10,6 @@
 #include "fonctionsUtilitaires.h"
 using namespace std;
 
-#define MAX_CAS = 4;
-
-static const int MAX_VALEURS = 4;
 
 int main()
 {

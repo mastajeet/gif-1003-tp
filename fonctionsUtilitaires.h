@@ -8,13 +8,12 @@
 #ifndef FONCTIONSUTILITAIRES_H_
 #define FONCTIONSUTILITAIRES_H_
 
-#define MAX_CAS = 4;
-
+static const int MAX_CAS = 4;
 static const int MAX_VALEURS = 4;
 
 void triBulle(int tabDonnees[MAX_VALEURS]);
 void tri2d(int tabDonnees[][MAX_VALEURS], int);
-int occurencesPlusGrand(int tabDonnees[MAX_VALEURS][],int, int);
+int occurencesPlusGrand(int tabDonnees[][MAX_VALEURS],int, int);
 bool existe(int tabDonnees[][MAX_VALEURS],int, int p_valeur);
 
 #endif /* FONCTIONSUTILITAIRES_H_ */

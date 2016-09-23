@@ -34,6 +34,9 @@ int main()
 	tri2d(tabValeurs, MAX_CAS);
 	cout << "nouveau contenu du tableau :" << endl;
 	afficherTableau(tabValeurs, MAX_CAS);
+
+
+	int seuil;
 	cout << "saisir la valeur seuil :" << endl;
 	cin >> seuil;
 

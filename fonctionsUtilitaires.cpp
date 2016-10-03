@@ -92,3 +92,7 @@ void afficherTableau(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes)
 	}
 
 }
+
+bool existe(int tabDonnees[][MAX_VALEURS],int, int p_valeur){
+	return true;
+}

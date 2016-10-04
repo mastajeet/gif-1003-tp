@@ -55,20 +55,17 @@ void tri2d(int tabDonnees[][MAX_VALEURS], int p_nombreLignes)
  * \pre p_valeur existe dans le tableau
  * \return le nombre de nombres plus grand que la valeur passée en paramètre
  */
-int occurencesPlusGrand(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes,
+int reqOccurencesPlusGrandes(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes,
 		int p_valeur)
 {
 	float nombreOccurencesPlusGrand;
-	if (existe(p_tabDonnees, p_nombreLignes, p_valeur))
+	for (int i = 0; i < p_nombreLignes; ++i)
 	{
-		for (int i = 0; i < p_nombreLignes; ++i)
+		int j = 0;
+		while (p_tabDonnees[i][j] > p_valeur && j < MAX_VALEURS)
 		{
-			int j = 0;
-			while (p_tabDonnees[i][j] > p_valeur && j < MAX_VALEURS)
-			{
-				nombreOccurencesPlusGrand++;
-				j++;
-			}
+			nombreOccurencesPlusGrand++;
+			j++;
 		}
 	}
 	return nombreOccurencesPlusGrand;
@@ -93,6 +90,3 @@ void afficherTableau(int p_tabDonnees[][MAX_VALEURS], int p_nombreLignes)
 
 }
 
-bool existe(int tabDonnees[][MAX_VALEURS],int, int p_valeur){
-	return true;
-}

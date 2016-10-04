@@ -13,7 +13,6 @@ using namespace std;
 
 int main()
 {
-	float variante;
 	int tabValeurs[MAX_CAS][MAX_VALEURS];
 
 	cout << "Saisissez des nombres séparés par des entrées " << endl;
@@ -42,15 +41,13 @@ int main()
 
 	float taux;
 	int cardinalite = MAX_VALEURS * MAX_CAS;
-	taux = (occurencesPlusGrand(tabValeurs, MAX_CAS, seuil)*100 / cardinalite);
+	taux = (reqOccurencesPlusGrandes(tabValeurs, MAX_CAS, seuil)*100 / cardinalite);
 
 
 	cout << "il y a " << taux << " pourcent de nombres plus grands que "
 				<< seuil << " dans le tableau de valeurs" << endl;
 
-	//ceci est un test
-//	seuil = seuil * taux;
-//	cout << seuil << endl;
+
 
 	return 0;
 }
